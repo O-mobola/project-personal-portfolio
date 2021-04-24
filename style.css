@@ -1,0 +1,198 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height: 1.2em;
+	background-color: #d4d4d4;
+}
+
+/* ---reusable--- */
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/*--- header---*/
+header {
+	background: linear-gradient(40deg, maroon, red, maroon);
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+}
+
+#navbar {
+	display: grid;
+	/*grid-template-columns: 1fr;*/
+	justify-items: center;
+}
+
+#navlist {
+	display: grid;
+	list-style: none;
+	grid-gap: .4em 0;
+}
+
+.nav-link {
+	font-size: 100%;
+	text-decoration: none;
+	color: white;
+	
+}
+
+
+h2 {
+	text-align: center;
+	padding: 1.5em 0;
+}
+
+h2:after {
+	display: block;
+	content: "";
+	height: .1em;
+	background-color: maroon;
+	width: 15vw;
+	margin: .5em auto;
+}
+
+
+/* ---main-- */
+
+main {
+	margin: 0;
+	padding: 0;
+}
+
+/* --- welcome section ---*/
+
+#welcome-section {
+	height: 100vh;
+	width: 100%;
+	display: grid;
+	justify-items: center;
+	background-color: #27284d;
+	color: #ccc;
+}
+
+#welcome {
+	align-self: center;
+}
+
+
+/* ---project section--- */
+#projects {
+	padding: 3em 0;
+}
+
+.grid-container {
+	display: flex;
+	flex-direction: column;
+}
+
+figure {
+	border-radius: .3em;
+	box-shadow:  -.4em .3em 1em #0b0b15;
+	background-color: #0b0b15;
+}
+
+.project-tile {
+	margin-bottom: 3em;
+	padding: 0 .3em;
+}
+
+.project-tile a  {
+	margin: 0;
+	padding: 0;
+}
+
+.img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+figcaption {
+	margin: 0;
+	background-color: #0b0b15;
+	padding: .3em 0;
+}
+
+.grid-text {
+	font-size: 80%;
+	color: #ccc;
+	margin: 0;
+}
+
+
+/* ---profile-link section--- */
+#profile {
+	background-color: #27284d;
+	color: #ccc;
+	padding: .5em 0;
+	border-bottom: .2em solid maroon;
+	margin-bottom: 0;
+}
+
+
+#profile ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+#profile a {
+	text-decoration: none;
+	color: #ccc;
+}
+
+
+/* ----footer--- */
+footer {
+	background-color: #27284d;
+	padding: .5em 0;
+	text-align: center;
+	color: #ccc;
+}
+
+
+
+
+/* ---media rules--- */
+/* ---rules for smartphones and tablets--- */
+@media (min-width: 768px){
+	
+/* ---reusable--- */
+.container {
+	width: 85%;
+	margin: 0 auto;
+}	
+
+	
+/* ---header--- */
+#navbar {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#navlist {
+	display: flex;
+}
+
+.nav-link {
+	padding: 0 1.5em;
+}
+
+/* ---project section--- */
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 2em ;
+}
+
+
+}
